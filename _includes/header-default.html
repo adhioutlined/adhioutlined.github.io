@@ -1,0 +1,64 @@
+<header class="header-site" role="banner">
+    <div class="content">
+
+        <div class="person">
+            <img src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-0/p206x206/1538909_10202394734845630_1685791379_n.jpg?oh=15ca6e03b225f5bb75cefdab3f708777&oe=58F6EA2C" alt="">
+        </div>
+
+        <h1>
+            <span class="site-title">[{{site.username}}]</span>
+        </h1>
+        <div>
+            <h2><center>{{site.description}}</center></h2>
+        </div>
+
+        <div class="icons-home">
+
+            <a aria-label="Send email" href="mailto:{{site.email}}">
+                <svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg>
+            </a>
+
+            <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{site.twitter_username}}">
+                <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+            </a>
+
+            <a aria-label="My Google Plus" target="_blank" href="https://plus.google.com/{{site.gplus_username}}/posts">
+                <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg>
+            </a>
+
+            <a aria-label="My Github" target="_blank" href="https://github.com/{{site.github_username}}">
+                <svg class="icon icon-github-alt"><use xlink:href="#icon-github-alt"></use></svg>
+            </a>
+
+            <a aria-label="Use the RSS to get updated" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                <svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg>
+            </a>
+
+        </div>
+
+        <ul class="recent">
+            <p>Recent posts:</p>
+             {% for post in site.posts limit:10%}
+                <li>
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        <h2 class="post-title" itemprop="name">{{ post.title }}</h2>
+                    </a>
+                </li>
+              {% endfor %}
+        </ul>
+
+<!--        <ul class="recent">
+            <p>Recent projects:</p>
+             {% for project in site.projects limit:3%}
+                <li>
+                    <a href="{{ project.url}}">
+                        <h2 class="post-title" itemprop="name">{{ project.name }}</h2>
+                    </a>
+                </li>
+              {% endfor %}
+        </ul>
+
+-->
+    </div>
+    {% include menu-search.html %}
+</header>
