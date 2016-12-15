@@ -4,7 +4,7 @@ description: "Just stay at /var/log/"
 baseurl: '' # for test: remove string '/space-jekyll-templa' to ''
 url: "https://adhioutlined.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https:yourusername.githu.io'
 # User settings
-username: a.d.h.i.
+username: a.d.h.i
 user_title: Lorem Ipsum - FrontEnd
 email: adhi.pri@gmail.com
 twitter_username: adhioutlined
