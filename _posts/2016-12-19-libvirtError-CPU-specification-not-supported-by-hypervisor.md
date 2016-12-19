@@ -13,7 +13,7 @@ categories:
 serie: openstack
 ---
 
-If you're in staging or testing phase of openstack development, it's possible for you using an Virtual Machine as Compute Node / Hypervisor. That's mean we will running an VM over an VM.
+If you're in staging or testing phase of openstack development, it's possible for you using an Virtual Machine as Compute Node / Hypervisor. That's mean you will create and running an VM over an VM.
 
 Typically we only define ```virt_type = qemu``` inside of ```[libvirt]``` section of ```nova.conf``` file. Because we use a VM as a Hypervisor, it is possible to raise an error like this :
 
