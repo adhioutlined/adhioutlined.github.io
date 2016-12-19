@@ -19,7 +19,7 @@ Typically we only define ```virt_type = qemu``` inside of ```[libvirt]``` sectio
 
 ```libvirtError: unsupported configuration: CPU specification not supported by hypervisor```
 
-By default nova will define libvirt cpu-mode using "host-model". So if you are running your compute node/hypervisor using an Virtual Machine, you should specify libvirt cpu-mode using an "none" option. Add this line inside of ```[libvirt]``` section of ```nova.conf``` file.
+By default nova will define libvirt cpu-mode using "host-model". So if you are running your compute node/hypervisor using an Virtual Machine, you should specify libvirt cpu-mode using an ***"none"*** option. Add this line inside of ```[libvirt]``` section of ```nova.conf``` file.
 
 So your ```[libvirt]``` section of ```nova.conf``` will be look like this :
 
