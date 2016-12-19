@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "libvirtError: unsupported configuration: CPU specification not supported by hypervisor"
-image: ''
+image: '/assets/img/blog-img/2624988907_39e6f5e4d4_b.jpg'
 date:  2016-12-19 00:43:31
 tags:
 - kvm
