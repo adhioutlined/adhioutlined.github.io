@@ -14,13 +14,13 @@ serie:
 
 This is the list of Savior Place in case you feel hungry when you visiting Semarang.
 
-##NASI GORENG BABAT##
+## NASI GORENG BABAT ##
 
-Nasi Goreng Babat a.k.a *Fried Rice with Cow Tripe"
-|Name | Address | 
+Nasi Goreng Babat a.k.a *Fried Rice with Cow Tripe*
+- |Name | Address | -
 -|---- | ------- | -
-1|Nasi Goreng Babat Pak KARMIN | Jembatan Berok, telp 024 356334 & Cab. Gajah Mada, telp. 024 3558565
-2|Nasi Goreng Babat Pak MARSONO | Perempatan Jl. Anjasmoro Raya no. 64 sesudah rel belok kanan, buka siang - malam, telp. 081390302192
+1|Nasi Goreng Babat Pak KARMIN | Jembatan Berok, telp 024 356334 & Cab. Gajah Mada, telp. 024 3558565 | -
+2|Nasi Goreng Babat Pak MARSONO | Perempatan Jl. Anjasmoro Raya no. 64 sesudah rel belok kanan, buka siang - malam, telp. 081390302192 | -
 3. Nasi Goreng Babat Hengky (+ paru goreng, bisa minyak dikit dan tanpa vetsin), Puri Anjasmoro Blok M, setelah perempatan Arteri, maju belok kiri gang 1, telp 085225086676 (sebaiknya telp dulu dan pesan dulu), buka mulai jam 17.00
 4. Nasi Goreng Babat Pak DI, Gang Pinggir 23, telp. 08122834892, 081325950753
 5. Nasi Goreng Kepiting Rezeki (Nasi Goreng Artis), Gang Pusponjolo - Jl. Pamularsih, telp. 0247604913, 02470125216
