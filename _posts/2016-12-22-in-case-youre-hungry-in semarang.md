@@ -14,25 +14,45 @@ serie:
 
 This is the list of Savior Place in case you feel hungry when you visiting Semarang.
 
-## NASI GORENG BABAT ##
+### NASI GORENG BABAT ###
 
-Nasi Goreng Babat a.k.a *Fried Rice with Cow Tripe*
-- |Name | Address | -
--|---- | ------- | -
-1|Nasi Goreng Babat Pak KARMIN | Jembatan Berok, telp 024 356334 & Cab. Gajah Mada, telp. 024 3558565 | -
-2|Nasi Goreng Babat Pak MARSONO | Perempatan Jl. Anjasmoro Raya no. 64 sesudah rel belok kanan, buka siang - malam, telp. 081390302192 | -
-3. Nasi Goreng Babat Hengky (+ paru goreng, bisa minyak dikit dan tanpa vetsin), Puri Anjasmoro Blok M, setelah perempatan Arteri, maju belok kiri gang 1, telp 085225086676 (sebaiknya telp dulu dan pesan dulu), buka mulai jam 17.00
-4. Nasi Goreng Babat Pak DI, Gang Pinggir 23, telp. 08122834892, 081325950753
-5. Nasi Goreng Kepiting Rezeki (Nasi Goreng Artis), Gang Pusponjolo - Jl. Pamularsih, telp. 0247604913, 02470125216
-6. Nasi Goreng Babat Pak TAMAM Jl Stadion Selatan depan BKD
-II. NASI AYAM
-1. Nasi Ayam Pojok Matahari Bu SAMI, Simpang Lima, dekat tangga Simpang 5 Plasa, telp. 081326559966, 081325268885, buka mulai pukul 22.00 malam
-2. Nasi Ayam Yu PINI, Gang Pinggir, depan Salon Jhony Saleh buka malam pkl 18.00
-3. Nasi Ayam Bu NYOTO, depan SD Santo Yusuf - Jl. MT. Haryono, buka pagi jam 07.00, buka malam jam 18.00
-4. Nasi Ayam Bu WIDO, Jl. Gajah Mada, dekat ex Bioskop Murni
-5. Nasi Ayam Bu HAR Jl. Majapahit depan LOTTE MART
-III. NASI PINDANG
-1. Nasi Pindang/Lodeh SEDERHANA, Jl. Lampersari belakang Metro
+Nasi Goreng Babat a.k.a **Fried Rice with Cow Tripe**
+
+1. Nasi Goreng Babat Pak KARMIN
+   * Jembatan Berok, telp 024 356334
+   * Other branch at Jl. Gajah Mada, telp. 024 3558565
+2. Nasi Goreng Babat Pak MARSONO
+   * At Crossroad Jl. Anjasmoro Raya no. 64 Turn right after the railway, open day and night, telp. 081390302192
+3. Nasi Goreng Babat Hengky
+   * Puri Anjasmoro Blok M, After the Arteri crossroad, go ahead and turn left at first alley, telp 085225086676 (Better if you make an order first by phone), open at 5pm , you can add the fried cow lung, with few oil and without MSG added.
+4. Nasi Goreng Babat Pak DI
+   * Gang Pinggir 23, telp. 08122834892, 081325950753
+5. Nasi Goreng Kepiting Rezeki (Nasi Goreng Artis)
+   * Gang Pusponjolo - Jl. Pamularsih, telp. 0247604913, 02470125216
+6. Nasi Goreng Babat Pak TAMAM
+   * Jl Stadion Selatan in front of BKD office.
+
+## NASI AYAM ##
+
+Nasi Ayam a.k.a **Chicken Rice**
+
+1. Nasi Ayam Pojok Matahari Bu SAMI
+   * Simpang Lima, dekat tangga Simpang 5 Plasa, telp. 081326559966, 081325268885, open from 10pm.
+2. Nasi Ayam Yu PINI, 
+   * Gang Pinggir, front of Salon Jhony Saleh, open from 6pm.
+3. Nasi Ayam Bu NYOTO
+   * Front of SD Santo Yusup elementary school - Jl. MT. Haryono, open twice a day at 7am and 10pm
+4. Nasi Ayam Bu WIDO
+   * Jl. Gajah Mada, near of ex Bioskop (theater) Murni.
+5. Nasi Ayam Bu HAR 
+   * Jl. Majapahit front of LOTTE MART
+
+## NASI PINDANG ##
+
+Nasi Pindang a.k.a **Fish Brine Rice**
+
+1. Nasi Pindang/Lodeh SEDERHANA
+   * Jl. Lampersari belakang Metro
 2. Nasi Pindang Pak NDUT, Jl. Stadion Selatan - sebelah Ayam Penyet Pak Kul
 3. Pindang - Jl. Gajah Mada dekat perempatan Depok.
 4. Nasi Pindang Jl Tlogorejo
