@@ -2,6 +2,9 @@
 <html lang="pt-br">
     {% include head.html %}
     <body>
+        {% if jekyll.environment == 'production' %}
+        {% include analytics.html %}
+        {% endif %}
         {% include svg-icons.html %}
         {% include header-post.html %}
         {% include tree-posts.html %}

@@ -7,6 +7,9 @@ layout: compress
     {% include head.html %}
     <body>
         {% include svg-icons.html %}
+        {% if jekyll.environment == 'production' %}
+        {% include analytics.html %}
+        {% endif %}
         {% include header-post.html %}
         {% include tree-posts.html %}
         <section class="post" itemscope itemtype="http://schema.org/WebPage">
