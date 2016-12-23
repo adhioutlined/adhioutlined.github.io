@@ -46,7 +46,4 @@ links:
 #   - name: generator-capybara
 #     url: https://github.com/victorvoid/generator-capybara 
 # exclude my node related stuff
-eaxclude: ['package.json', 'src', 'node_modules']
-
-gems:
-  - jekyll-sitemap
+exclude: ['package.json', 'src', 'node_modules']
