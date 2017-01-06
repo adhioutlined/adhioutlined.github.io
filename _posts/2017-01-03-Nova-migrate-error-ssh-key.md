@@ -29,9 +29,9 @@ Then, while ```nova migrate``` command working, source host (hypervisor/compute)
 
 1. Run __setenforce 0__ to put SELinux into permissive mode. 
 2. Enable login abilities for the nova user:
-   * ```python
-   * # usermod -s /bin/bash nova
-   * ```
+   ```python
+   # usermod -s /bin/bash nova
+   ```
 3. as root, give nova user password, for __ssh-copy-id__ works later
    ```python
    # passwd nova
