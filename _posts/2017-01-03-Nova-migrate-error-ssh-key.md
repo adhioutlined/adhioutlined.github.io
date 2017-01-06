@@ -14,10 +14,10 @@ serie: openstack
 
 ![alt text](/assets/img/blog-img/y4azyntou5ybeulcquqx.jpg)
 
-   ```
+```python
    ERROR oslo_messaging.rpc.server ResizeError: Resize error: not able to execute ssh command: Unexpected error while running command.
    ERROR oslo_messaging.rpc.server Command: ssh -o BatchMode=yes <compute_host_address> mkdir -p /var/lib/nova/instances/<instance-id>
-   ```
+```
 
 It's possible for you to get those errors while you migrate your instance from one host (hypervisor/compute) to another host (hypervisor/compute). Those errors appears because by default nova service create user nova on system for Daemons only with nologin.
 
