@@ -1,13 +1,10 @@
 ---
-title:  "Openvswitch Cheat Sheet"
-image: ''
-date:  2016-12-14 00:43:31
+title: "Openvswitch Cheat Sheet"
+date: 2016-12-14
 tags:
-- openvswitch
-description: ''
+  - openvswitch
 categories:
-- Virtual
-serie: openvswitch
+  - Virtual
 ---
 
 ## Look up the table
