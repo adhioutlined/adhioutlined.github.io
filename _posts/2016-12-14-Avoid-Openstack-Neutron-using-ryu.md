@@ -1,18 +1,17 @@
 ---
-layout: post
-title:  "Avoid Openstack Neutron using ryu"
-image: '/assets/img/blog-img/8698869017_339ed43c69_o.jpg'
+title: "Avoid Openstack Neutron using Ryu"
+header:
+  teaser: /assets/images/8698869017_339ed43c69_o.jpg
 date:  2016-12-14 00:43:31
-tags:
-- openvswitch
-- openstack
-description: ''
 categories:
-- Virtual
-serie: openstack
+  - Virtual
+tags:
+  - openstack
+  - neutron
+  - cloud computing
 ---
 
-![alt text](/assets/img/blog-img/8698869017_339ed43c69_o.jpg)
+![alt text](/assets/images/8698869017_339ed43c69_o.jpg)
 
 I'm so excited by the latest release of OpenStack, the Newton release. Recently I workon Liberty release connected to XenServer as a hypervisor, and I skipped tried Mitaka release.
 

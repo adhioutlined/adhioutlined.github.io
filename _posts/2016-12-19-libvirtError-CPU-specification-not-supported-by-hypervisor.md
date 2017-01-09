@@ -1,7 +1,6 @@
 ---
-layout: post
 title:  "libvirtError: unsupported configuration: CPU specification not supported by hypervisor"
-image: '/assets/img/blog-img/2624988907_39e6f5e4d4_b.jpg'
+image: '/assets/images/2624988907_39e6f5e4d4_b.jpg'
 date:  2016-12-19 00:43:31
 tags:
 - kvm
@@ -13,7 +12,7 @@ categories:
 serie: openstack
 ---
 
-![alt text](/assets/img/blog-img/2624988907_39e6f5e4d4_b.jpg)
+![alt text](/assets/images//2624988907_39e6f5e4d4_b.jpg)
 
 If you're in staging or testing phase of openstack development, it's possible for you using an Virtual Machine as Compute Node / Hypervisor. That's mean you will create and running an VM over an VM.
 

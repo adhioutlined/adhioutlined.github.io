@@ -1,7 +1,6 @@
 ---
-layout: post
 title:  "Openstack Nova Migrate Error SSH Key"
-image: '/assets/img/blog-img/y4azyntou5ybeulcquqx.jpg'
+image: '/assets/images/y4azyntou5ybeulcquqx.jpg'
 date:  2017-01-03 00:43:31
 tags:
 - openstack
@@ -12,7 +11,7 @@ categories:
 serie: openstack
 ---
 
-![alt text](/assets/img/blog-img/y4azyntou5ybeulcquqx.jpg)
+![alt text](/assets/images/y4azyntou5ybeulcquqx.jpg)
 
 {% highlight python %}
    ERROR oslo_messaging.rpc.server ResizeError: Resize error: not able to execute ssh command: Unexpected error while running command.

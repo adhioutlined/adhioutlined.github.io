@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "In Case You Get Hungry in Semarang"
 image: ''
 date:  2016-12-19 00:43:31

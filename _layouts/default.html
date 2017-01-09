@@ -1,19 +1,28 @@
 ---
-layout: compress
 ---
 
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
     {% include head.html %}
-    <body>
-        {% include svg-icons.html %}
-        {% include header-default.html %}
-            <section class="content">
-                {{ content }}
-            </section>
-        {% include scripts.html %}
-        {% if jekyll.environment == 'production' %}
-        {% include analytics.html %}
-        {% endif %}
-    </body>
+    {% include head/custom.html %}
+  </head>
+
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    {{ content }}
+
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
 </html>

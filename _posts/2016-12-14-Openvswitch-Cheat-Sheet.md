@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Openvswitch Cheat Sheet"
 image: ''
 date:  2016-12-14 00:43:31
