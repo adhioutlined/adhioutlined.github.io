@@ -19,9 +19,9 @@ ovs-vsctl list bridge ovs-br
 asdfasdfasdf
 
 1. Add Bridge
-{% highlight python %}
+```python
 ovs-vsctl add-br ovs-br
-{% endhighlight %}
+```
 2. **Corresponds to the interface on ovs-br**
    ```python
    ovs-vsctl add-port ovs-br eth0
