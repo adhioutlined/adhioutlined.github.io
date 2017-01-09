@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Adhi Priharmanto | Just Stay at /var/lo"
+title                    : "Adhi Priharmanto | Just Stay at /var/log"
 title_separator          : "-"
 name                     : "Adhi Priharmanto"
 description              : "Just Stay at /var/log"
