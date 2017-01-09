@@ -11,7 +11,8 @@ serie: openvswitch
 ---
 
 ## Look up the table
-```ovs-vsctl list bridge ovs-br```
+```python
+ovs-vsctl list bridge ovs-br```
 
 ## About Bridge and Port
 
