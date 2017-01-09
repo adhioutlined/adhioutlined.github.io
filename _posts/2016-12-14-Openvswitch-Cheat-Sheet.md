@@ -12,14 +12,19 @@ serie: openvswitch
 
 ## Look up the table
 ```python
-ovs-vsctl list bridge ovs-br```
+ovs-vsctl list bridge ovs-br
+```
 
 ## About Bridge and Port
 
 1. **Add Bridge**
-   ``` ovs-vsctl add-br ovs-br ```
+   ```python
+   ovs-vsctl add-br ovs-br
+   ```
 2. **Corresponds to the interface on ovs-br**
-   ``` ovs-vsctl add-port ovs-br eth0 ```
+   ```python
+   ovs-vsctl add-port ovs-br eth0
+   ```
 3. **(1) + (2) can be written**
    ``` ovs−vsctl add−br ovs-br -- add−port ovs-br eth0 ```
 4. **Remove Bridge**
