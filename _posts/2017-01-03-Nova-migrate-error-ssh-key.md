@@ -28,29 +28,17 @@ Then, while ```nova migrate``` command working, source host (hypervisor/compute)
 
 1. Run __setenforce 0__ to put SELinux into permissive mode. 
 2. Enable login abilities for the nova user:
-   ```python
-   # usermod -s /bin/bash nova
-   ```
+   ```# usermod -s /bin/bash nova```
 3. as root, give nova user password, for __ssh-copy-id__ works later
-   ```python
-   # passwd nova
-   ```
+   ```# passwd nova```
    then switch to nova account:
-   ```python
-   # su nova
-   ```
+   ```# su nova```
 4. Generate ssh-key for nova user
-   ```python
-   $ ssh-keygen -t rsa
-   ```
+   ```$ ssh-keygen -t rsa```
 5. Repeat step 1-4 for all nova users in each compute nodes
 6. As nova user Copy SSH-Key to every compute nodes
-   ```python
-   $ ssh-copy-id <compute-nodes-destinations>
-   ```
+   ```$ ssh-copy-id <compute-nodes-destinations>```
 7. Try to ssh, it must be automatically login without password
-   ```python
-   $ ssh <compute-nodes-destinations>
-   ```
+   ```$ ssh <compute-nodes-destinations>```
 
 Try for ```nova migrate``` again, and see for any further errors.
