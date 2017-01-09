@@ -16,7 +16,7 @@ ovs-vsctl list bridge ovs-br
 ```
 
 ## About Bridge and Port
-asdfasdfasdf
+kepiyo
 
 1. Add Bridge
 ```python
