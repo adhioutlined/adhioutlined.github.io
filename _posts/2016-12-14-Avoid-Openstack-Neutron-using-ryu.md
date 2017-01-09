@@ -10,9 +10,6 @@ tags:
   - neutron
   - cloud computing
 ---
-
-![alt text](/assets/images/8698869017_339ed43c69_o.jpg)
-
 I'm so excited by the latest release of OpenStack, the Newton release. Recently I workon Liberty release connected to XenServer as a hypervisor, and I skipped tried Mitaka release.
 
 No Mitaka no problem, because we are in Newton now. Since the Kilo release many Neutron features require special tweaks to work on XenServer. As far as I know Security Groups default features still can't running well.
