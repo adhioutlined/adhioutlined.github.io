@@ -1,6 +1,7 @@
 ---
 title:  "libvirtError: unsupported configuration: CPU specification not supported by hypervisor"
-image: '/assets/images/2624988907_39e6f5e4d4_b.jpg'
+header:
+  image: /assets/images/2624988907_39e6f5e4d4_b.jpg
 date:  2016-12-19 00:43:31
 tags:
 - kvm
@@ -11,9 +12,6 @@ categories:
 - Virtual
 serie: openstack
 ---
-
-![alt text](/assets/images//2624988907_39e6f5e4d4_b.jpg)
-
 If you're in staging or testing phase of openstack development, it's possible for you using an Virtual Machine as Compute Node / Hypervisor. That's mean you will create and running an VM over an VM.
 
 Typically we only define ```virt_type = qemu``` inside of ```[libvirt]``` section of ```nova.conf``` file. Because we use a VM as a Hypervisor, it is possible to raise an error like this :

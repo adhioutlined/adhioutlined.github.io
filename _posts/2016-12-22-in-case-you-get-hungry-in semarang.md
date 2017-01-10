@@ -1,6 +1,7 @@
 ---
 title:  "In Case You Get Hungry in Semarang"
-image: ''
+header:
+  image: /assets/images/8703718919_4a8c8a4d28_k.jpg
 date:  2016-12-19 00:43:31
 tags:
 - Semarang
