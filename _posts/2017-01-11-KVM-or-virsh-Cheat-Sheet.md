@@ -4,12 +4,13 @@ header:
   image: /assets/images/zmjpgbyybuyvrb5cfb5a.jpg
 date:  2017-01-11
 tags:
-  - Semarang
-  - food
-  - Culinary
+  - KVM
+  - Virtualization
+  - Cheat Sheet
 description: ''
 categories:
-  - Others
+  - Virtual
+  = Cheat Sheet
 ---
 
 Just my note of Virsh Command

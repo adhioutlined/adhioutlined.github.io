@@ -7,9 +7,11 @@ tags:
   - Semarang
   - food
   - Culinary
+  = Cheat Sheet
 description: ''
 categories:
   - Others
+  = Cheat Sheet
 ---
 
 If you are in Semarang, Central Java, ID. Place on this list will be your savior of your hungry
