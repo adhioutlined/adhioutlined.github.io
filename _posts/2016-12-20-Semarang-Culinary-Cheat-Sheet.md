@@ -2,15 +2,14 @@
 title:  "Semarang Culinary Cheat Sheet"
 header:
   image: /assets/images/8703718919_4a8c8a4d28_k.jpg
-date:  2017-01-11
+date:  2016-12-20
 tags:
-- Semarang
-- food
-- Culinary
+  - Semarang
+  - food
+  - Culinary
 description: ''
 categories:
-- Others
-serie: 
+  - Others
 ---
 
 If you are in Semarang, Central Java, ID. Place on this list will be your savior of your hungry
