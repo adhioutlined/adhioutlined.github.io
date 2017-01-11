@@ -2,7 +2,7 @@
 title:  "Openstack Nova Migrate Error SSH Key"
 header:
   image: /assets/images/y4azyntou5ybeulcquqx.jpg
-date:  2017-01-03 00:43:31
+date:  2017-01-03
 tags:
 - openstack
 - nova

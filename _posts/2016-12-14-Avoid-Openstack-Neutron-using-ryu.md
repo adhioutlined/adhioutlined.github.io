@@ -2,7 +2,7 @@
 title: "Avoid Openstack Neutron using Ryu"
 header:
   image: /assets/images/8698869017_339ed43c69_o.jpg
-date:  2016-12-14 00:43:31
+date:  2016-12-14
 categories:
   - Virtual
 tags:
