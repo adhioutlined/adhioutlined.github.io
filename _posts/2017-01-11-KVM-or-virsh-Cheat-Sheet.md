@@ -94,11 +94,13 @@ iface kvmbr0 inet static
 ## Configure VM To Use Manual Bridge
 
 Edit the instance
+
 ```python
 virsh edit [guest identifier]
 ```
 
 Find the following section
+
 ```python
  <interface type='network'>
       <mac address='52:54:00:4d:3a:bd'/>
@@ -107,7 +109,9 @@ Find the following section
       <address type='pci' domain='0x0000' bus='0x00' slot='0x02' function='0x0'/>
     </interface>
 ```
-Change into 
+
+Change into : 
+
 ```python
 <interface type='bridge'>
         <mac address='52:54:00:4d:3a:bd'/>
