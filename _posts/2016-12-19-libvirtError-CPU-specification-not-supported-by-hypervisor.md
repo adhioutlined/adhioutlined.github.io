@@ -4,13 +4,12 @@ header:
   image: /assets/images/2624988907_39e6f5e4d4_b.jpg
 date:  2016-12-19
 tags:
-- kvm
-- qemu
-- openstack
+  - kvm
+  - qemu
+  - openstack
 description: ''
 categories:
-- Virtual
-serie: openstack
+  - Virtual
 ---
 If you're in staging or testing phase of openstack development, it's possible for you using an Virtual Machine as Compute Node / Hypervisor. That's mean you will create and running an VM over an VM.
 

@@ -4,12 +4,11 @@ header:
   image: /assets/images/y4azyntou5ybeulcquqx.jpg
 date:  2017-01-03
 tags:
-- openstack
-- nova
+  - openstack
+  - nova
 description: ''
 categories:
-- Virtual
-serie: openstack
+  - Virtual
 ---
 {% highlight python %}
    ERROR oslo_messaging.rpc.server ResizeError: Resize error: not able to execute ssh command: Unexpected error while running command.

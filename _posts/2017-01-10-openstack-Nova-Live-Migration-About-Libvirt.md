@@ -4,11 +4,11 @@ header:
   image: /assets/images/4831557124_e0e6b30b82_b.jpg
 date:  2017-01-10
 tags:
-- openstack
-- nova
+  - openstack
+  - nova
 description: ''
 categories:
-- Virtual
+  - Virtual
 ---
 
 Just in case you got a Libvirt Deadlock while doing instance Live-migration on Openstack with libvirt. Maybe you'll find some libvirt authentication error at nova-compute log.

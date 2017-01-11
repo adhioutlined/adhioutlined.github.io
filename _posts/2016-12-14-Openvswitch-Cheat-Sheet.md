@@ -6,7 +6,6 @@ tags:
   - Cheat Sheet
 categories:
   - Virtual
-  - Cheat Sheet
 ---
 
 ## Look up the table
