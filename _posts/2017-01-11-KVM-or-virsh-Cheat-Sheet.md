@@ -10,7 +10,7 @@ tags:
 description: ''
 categories:
   - Virtual
-  = Cheat Sheet
+  - Cheat Sheet
 ---
 
 Just my note of Virsh Command

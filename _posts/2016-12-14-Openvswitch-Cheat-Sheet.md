@@ -3,10 +3,10 @@ title: "Openvswitch Cheat Sheet"
 date: 2016-12-14
 tags:
   - openvswitch
-  = Cheat Sheet
+  - Cheat Sheet
 categories:
   - Virtual
-  = Cheat Sheet
+  - Cheat Sheet
 ---
 
 ## Look up the table
