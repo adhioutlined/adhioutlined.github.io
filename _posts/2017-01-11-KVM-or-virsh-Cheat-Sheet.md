@@ -67,6 +67,7 @@ Command | About
 
 ## Example Manual Network Config With Bridge
 
+
 This example of network config ubuntu users in ```/etc/network/interfaces``` :
 
 ```python
@@ -151,11 +152,12 @@ Change the **memory** and **currentMemory** fields to be the size you want in Ki
 ## CPU Management
 
 **Discover CPU Scheduling Parameters**
+
 ```python
 virsh schedinfo [guest ID or name]
 ```
-
 **Permanently Set CPU Shares For Live Running Instance**
+
 ```python
 sudo virsh schedinfo [guest ID or name] \
 --set cpu_shares=[0-262144] \
