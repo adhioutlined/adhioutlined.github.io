@@ -4,9 +4,7 @@ header:
   image: /assets/images/utnci8mmcr0wic18psyo.jpg
 date:  2017-02-03
 tags:
-  - solaris
   - storage
-  - san
 description: ''
 categories:
   - Storage
