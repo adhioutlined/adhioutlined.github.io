@@ -9,7 +9,7 @@ description: ''
 categories:
   - Basic
 ---
-It's just my note to create passwordless udoers user in centos7
+It's just my note to create passwordless sudoers user in centos7
 
 ## Add User
 
