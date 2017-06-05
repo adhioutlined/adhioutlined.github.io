@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Adhi Priharmanto"
-  avatar           : "https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-0/p206x206/1538909_10202394734845630_1685791379_n.jpg?oh=15ca6e03b225f5bb75cefdab3f708777&oe=58F6EA2C"
+  avatar           : "/assets/images/1398335_10202061464594082_127025413_o.jpg"
   bio              : "Victim of Cloud Deployment"
   location         : "Semarang, ID"
   email            :
@@ -90,7 +90,7 @@ author:
   facebook         : "adhi.pri"
   foursquare       :
   github           : "adhioutlined"
-  google_plus      : 
+  google_plus      :
   keybase          :
   instagram        : "adhioutlined"
   lastfm           :
