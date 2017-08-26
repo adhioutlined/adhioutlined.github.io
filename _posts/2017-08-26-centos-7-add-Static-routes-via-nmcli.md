@@ -9,7 +9,7 @@ description: ''
 categories:
   - Basic
 ---
-For me configuring Network in Centos 7 are more tricky when NetworkManager is active. Often configuring hard trough the configuration file inside `/etc/sysconfig/network-scripts/` are failed, because different format used between `NetworkManager.service` & `network.service`.
+For me configuring Network in Centos 7 are more tricky when `NetworkManager.service` is active. Frequently I configuring by changing configuration file inside `/etc/sysconfig/network-scripts/` are failed, because different format are use between `NetworkManager.service` & `network.service`.
 
 For example if we need to add static route for some device, lets say `eth1` device. When `network.service` is used, we can add this line to `/etc/sysconfig/network-scripts/route-eth1` file.
 
