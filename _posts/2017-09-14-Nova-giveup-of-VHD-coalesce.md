@@ -81,6 +81,22 @@ Sep 14 16:36:26 fatxs-1 SMGC: [19805] Starting asynch srUpdate for SR 0995f66a-6
 
 To fixing corrupted/failed Coalesce of VHD you should repair the VHD using `vhd-util` tools.
 
+Get the VHD information
+
+```
+# vmuuid=$(xe vm-list name-label=<INSTANCE NAME> --minimal)
+# vbduuid=$(xe vbd-list vm-uuid=$vmuuid --minimal)
+# xe vdi-list vbd-uuids=$vbduuid
+
+uuid ( RO)                : 91499ab6-63e9-47cf-b73a-b7fc2b09dcc7
+          name-label ( RW): instance-000000c4
+    name-description ( RW): root
+             sr-uuid ( RO): 0995f66a-6188-ad63-4d00-117498b7fd46
+        virtual-size ( RO): 10737418240
+            sharable ( RO): false
+           read-only ( RO): false
+```
+
 Check the VHD condition
 ```
 # vhd-util check -n /var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd
@@ -159,19 +175,7 @@ vhd-util repair –n /var/run/sr-mount/<sr-uuid>/<vdi-uud>.vhd
 Example :
 
 ```
-# vmuuid=$(xe vm-list name-label=<INSTANCE NAME> --minimal)
-# vbduuid=$(xe vbd-list vm-uuid=$vmuuid --minimal)
-# xe vdi-list vbd-uuids=$vbduuid
-
-uuid ( RO)                : 91499ab6-63e9-47cf-b73a-b7fc2b09dcc7
-          name-label ( RW): instance-000000c4
-    name-description ( RW): root
-             sr-uuid ( RO): 0995f66a-6188-ad63-4d00-117498b7fd46
-        virtual-size ( RO): 10737418240
-            sharable ( RO): false
-           read-only ( RO): false
-
-vhd-util repair –n /var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd
+# vhd-util repair –n /var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd
 ```
 
 Then Check the VHD condition using .
@@ -181,7 +185,7 @@ vhd-util check –n /var/run/sr-mount/<sr-uuid>/<vdi-uud>.vhd
 
 Example :
 ```
-[root@fatxs-1 images]# vhd-util check -n /var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd
+# vhd-util check -n /var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd
 /var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd is valid
 ```
 
