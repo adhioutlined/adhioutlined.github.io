@@ -97,7 +97,12 @@ uuid ( RO)                : 91499ab6-63e9-47cf-b73a-b7fc2b09dcc7
            read-only ( RO): false
 ```
 
-Check the VHD condition
+Then Check the VHD condition using .
+```
+vhd-util check –n /var/run/sr-mount/<sr-uuid>/<vdi-uud>.vhd
+```
+
+Example :
 ```
 # vhd-util check -n /var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd
 primary footer invalid: invalid cookie
@@ -178,12 +183,8 @@ Example :
 # vhd-util repair –n /var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd
 ```
 
-Then Check the VHD condition using .
-```
-vhd-util check –n /var/run/sr-mount/<sr-uuid>/<vdi-uud>.vhd
-```
 
-Example :
+Check the VHD condition again :
 ```
 # vhd-util check -n /var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd
 /var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd is valid
