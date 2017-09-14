@@ -45,47 +45,43 @@ pts exceeded (20), giving up...
 Then we have a few work on Dom0 that host the instance. First time we need to check the `/var/log/SMlog` of Dom0. You may find information like :
 
 ```
-<1511> 2014-05-16 09:48:33.237614       *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-
-<1511> 2014-05-16 09:48:33.237694                ***********************
-
-<1511> 2014-05-16 09:48:33.237766                *  E X C E P T I O N  *
-
-<1511> 2014-05-16 09:48:33.237836                ***********************
-
-<1511> 2014-05-16 09:48:33.237921       coalesce: EXCEPTION util.SMException, VHD *437da53e[VHD](900.000G//99.184G|a) corrupted
+Sep 14 16:36:26 fatxs-1 SMGC: [19805] *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]          ***********************
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]          *  E X C E P T I O N  *
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]          ***********************
+Sep 14 16:36:26 fatxs-1 SMGC: [19805] coalesce: EXCEPTION <class 'util.CommandException'>, Invalid argument
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]   File "/opt/xensource/sm/cleanup.py", line 1542, in coalesce
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]     self._coalesce(vdi)
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]   File "/opt/xensource/sm/cleanup.py", line 1732, in _coalesce
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]     vdi._doCoalesce()
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]   File "/opt/xensource/sm/cleanup.py", line 692, in _doCoalesce
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]     self.parent._increaseSizeVirt(self.sizeVirt)
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]   File "/opt/xensource/sm/cleanup.py", line 890, in _increaseSizeVirt
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]     self._setSizeVirt(size)
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]   File "/opt/xensource/sm/cleanup.py", line 905, in _setSizeVirt
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]     vhdutil.setSizeVirt(self.path, size, jFile)
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]   File "/opt/xensource/sm/vhdutil.py", line 228, in setSizeVirt
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]     ioretry(cmd)
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]   File "/opt/xensource/sm/vhdutil.py", line 102, in ioretry
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]     errlist = [errno.EIO, errno.EAGAIN])
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]   File "/opt/xensource/sm/util.py", line 292, in ioretry
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]     return f()
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]   File "/opt/xensource/sm/vhdutil.py", line 101, in <lambda>
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]     return util.ioretry(lambda: util.pread2(cmd),
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]   File "/opt/xensource/sm/util.py", line 189, in pread2
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]     return pread(cmdlist, quiet = quiet)
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]   File "/opt/xensource/sm/util.py", line 182, in pread
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]     raise CommandException(rc, str(cmdlist), stderr.strip())
+Sep 14 16:36:26 fatxs-1 SMGC: [19805]
+Sep 14 16:36:26 fatxs-1 SMGC: [19805] *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+Sep 14 16:36:26 fatxs-1 SMGC: [19805] Coalesce failed, skipping
+Sep 14 16:36:26 fatxs-1 SMGC: [19805] In cleanup
+Sep 14 16:36:26 fatxs-1 SMGC: [19805] Starting asynch srUpdate for SR 0995f66a-6188-ad63-4d00-117498b7fd46
 ```
 
-To get corrupted VHD fixe you should repair the VHD using `vhd-util` tools.
+To fixing corrupted/failed Coalesce of VHD you should repair the VHD using `vhd-util` tools.
 
-```
-vhd-util repair –n /var/run/sr-mount/<sr-uuid>/<vdi-uud>.vhd
-```
-
-Example :
-
-```
-# vmuuid=$(xe vm-list name-label=<INSTANCE NAME> --minimal)
-# vbduuid=$(xe vbd-list vm-uuid=$vmuuid --minimal)
-# xe vdi-list vbd-uuids=$vbduuid
-
-uuid ( RO)                : 91499ab6-63e9-47cf-b73a-b7fc2b09dcc7
-          name-label ( RW): instance-000000c4
-    name-description ( RW): root
-             sr-uuid ( RO): 0995f66a-6188-ad63-4d00-117498b7fd46
-        virtual-size ( RO): 10737418240
-            sharable ( RO): false
-           read-only ( RO): false
-
-vhd-util repair –n /var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd
-```
-
-Then Check the VHD condition using .
-```
-vhd-util check –n /var/run/sr-mount/<sr-uuid>/<vdi-uud>.vhd
-```
-
-Example :
+Check the VHD condition
 ```
 # vhd-util check -n /var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd
 primary footer invalid: invalid cookie
@@ -152,6 +148,41 @@ Batmap offset       : 22528
 Batmap size (secs)  : 2
 Batmap version      : 0x00010002
 Checksum            : 0xfffff312|0xfffff312 (Good!)
+```
+
+Repair the VHD
+
+```
+vhd-util repair –n /var/run/sr-mount/<sr-uuid>/<vdi-uud>.vhd
+```
+
+Example :
+
+```
+# vmuuid=$(xe vm-list name-label=<INSTANCE NAME> --minimal)
+# vbduuid=$(xe vbd-list vm-uuid=$vmuuid --minimal)
+# xe vdi-list vbd-uuids=$vbduuid
+
+uuid ( RO)                : 91499ab6-63e9-47cf-b73a-b7fc2b09dcc7
+          name-label ( RW): instance-000000c4
+    name-description ( RW): root
+             sr-uuid ( RO): 0995f66a-6188-ad63-4d00-117498b7fd46
+        virtual-size ( RO): 10737418240
+            sharable ( RO): false
+           read-only ( RO): false
+
+vhd-util repair –n /var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd
+```
+
+Then Check the VHD condition using .
+```
+vhd-util check –n /var/run/sr-mount/<sr-uuid>/<vdi-uud>.vhd
+```
+
+Example :
+```
+[root@fatxs-1 images]# vhd-util check -n /var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd
+/var/run/sr-mount/0995f66a-6188-ad63-4d00-117498b7fd46/91499ab6-63e9-47cf-b73a-b7fc2b09dcc7.vhd is valid
 ```
 
 If the vhd-util check result OK/Good you can try to migrate instance again.
