@@ -1,7 +1,7 @@
 ---
 title:  "Recovering Openstack Galera Cluster"
 header:
-  image: /assets/images/4930961643_ba9b08888d_b.jpg.jpg
+  image: /assets/images/4930961643_ba9b08888d_b.jpg
 date:  2017-10-23
 tags:
   - Openstack
