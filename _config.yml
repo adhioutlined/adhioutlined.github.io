@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en"
+locale                   : "en_en"
 title                    : "Adhi Priharmanto | Just Stay at /var/log"
 title_separator          : "-"
 name                     : "Adhi Priharmanto"
@@ -27,7 +27,8 @@ comments:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+#    colorscheme          : # "light" (default), "dark"
+   colorscheme          : "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master"
