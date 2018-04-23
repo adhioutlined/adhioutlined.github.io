@@ -10,7 +10,10 @@ categories:
   - Storage
 ---
 It's just my note, about How to Show Disk Info in Solaris. Using the `iostat` command we can gather about disk information.
-In this case I need to see the HDD Vendor and Type/Series, so I'll use `-E`.
+
+In this case I need to see the HDD Vendor and Type/Series, so I'll use `-E` option.
+
+
 ```
 # iostat -E
 sd0       Soft Errors: 0 Hard Errors: 0 Transport Errors: 0
